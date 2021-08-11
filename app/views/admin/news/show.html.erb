@@ -1,0 +1,4 @@
+<p>タイトル: <%= @news.title %></p>
+<p><%= simple_format(h @news.content) %></p>
+<hr>
+<p><%= link_to "お知らせ新規投稿", new_admin_news_path %></p>
