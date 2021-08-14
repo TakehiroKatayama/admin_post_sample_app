@@ -5,7 +5,8 @@
         <%= image_tag news.image.url, size: "240x160" %>
       <% end %>
     </div>
-    <div class="card-title">
+    <div class="card- body">
+      <p class="card-title"><%= l news.created_at %></p>
       <p class="card-title"><%= news.title %></p>
     </div>
   </div>
