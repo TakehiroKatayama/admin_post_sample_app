@@ -1,11 +1,12 @@
 <div class="col-12 col-md-6 col-lg-4">
   <div class="card">
     <div class="card-img" >
-      <%= image_tag news.image. thumb.url, width: "348" %>
+      <%= image_tag news.image. thumb.url, size: "298x200" %>
     </div>
     <div class="card-content">
-      <p class="card-title"><small class="text-muted"><%= l news.created_at %></small></p>
+      <p class="card-body"><small class="text-muted"><%= l news.created_at %></small></p>
       <h1 class="card-title"><%= news.title %></h1>
+      <p class="card-bottun">詳細</p>
     </div>
   </div>
 </div>
