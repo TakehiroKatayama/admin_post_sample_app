@@ -19,7 +19,8 @@
 
 .base-container {
   margin: 0 auto;
-  padding: 1rem;
+  //padding: 100px;
+  //background-color: #000;
 }
 
 /* max-width */
@@ -40,14 +41,8 @@
   max-width: 1200px;
 }
 
-@media screen and (max-width: 460px) {
-  .card {
-    display: none;
-  }
-}
-
 .card {
-  margin: 10px auto;
+  margin: 10px 30px;
   width: 300px;
   background: #fff;
   border-radius: 5px;
@@ -79,12 +74,16 @@
   line-height: 1.5;
 }
 
-.slick-next {
-  right: 10px !important;
-  z-index: 100;
+.slick-list {
+  margin: 0px 100px;
 }
 
 .slick-prev {
-  left: 10px !important;
-  z-index: 100;
+  color: #000;
+}
+
+@media screen and (max-width: 460px) {
+  .card {
+    display: none;
+  }
 }
