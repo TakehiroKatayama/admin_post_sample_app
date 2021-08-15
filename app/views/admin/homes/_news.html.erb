@@ -1,0 +1,10 @@
+<tr>
+  <td>
+    <%= news.title %>
+  </td>
+  <td>
+    <%= link_to "詳細", admin_news_path(news), class: 'btn btn-info' %>
+    <%= link_to "編集", edit_admin_news_path(news), class: 'btn btn-success' %>
+    <%= link_to "削除", admin_news_path(news), method: :delete, data: { confirm: "削除しますか？" }, class: 'btn btn-danger' %>
+  </td>
+</tr>

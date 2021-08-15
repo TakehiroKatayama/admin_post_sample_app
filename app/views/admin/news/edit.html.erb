@@ -1,0 +1,17 @@
+<h1>管理者画面 お知らせ編集</h1>
+<%= form_with model: @news, url: admin_news_path(@news), local: true do |f| %>
+  <p>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :content %>
+    <%= f.text_area :content %>
+  </p>
+  <p>
+    <%= f.file_field :image %>
+  </p>
+  <p>
+    <%= f.submit "送信" %>
+  </p>
+<% end %>

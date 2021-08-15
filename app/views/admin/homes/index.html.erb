@@ -1,2 +1,12 @@
 <h1>管理者画面 トップページ</h1>
 <%= link_to "お知らせ新規投稿", new_admin_news_path %>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">タイトル</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render partial: "admin/homes/news", collection: @newses %>
+  </tbody>
+</table>
