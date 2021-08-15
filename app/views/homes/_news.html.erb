@@ -1,10 +1,10 @@
-<div class="card">
+<div class="card bg-dark text-white">
   <div class="card-img" >
     <%= image_tag news.image. thumb.url, size: "238x160" %>
   </div>
-  <div class="card-content">
+  <div class="card-img-overlay">
+    <h5 class="card-title"><%= news.title %></h5>
     <p class="card-body"><small class="text-muted"><%= l news.created_at %></small></p>
-    <h1 class="card-title"><%= news.title %></h1>
     <p class="card-button">詳細</p>
   </div>
 </div>

@@ -1,7 +1,7 @@
 $(function () {
   $('.slider').slick({
     dots: true,
-    slidesToShow: 4, //表示するスライドの数
+    slidesToShow: 2, //表示するスライドの数
 
     responsive: [
       {

@@ -1,0 +1,7 @@
+<p>タイトル: <%= @news.title %></p>
+<p><%= simple_format(h @news.content) %></p>
+<hr>
+<% if @news.image? %>
+  <p><%= image_tag @news.image.url %></p>
+<% end %>
+<p><%= link_to "News一覧", news_index_path %></p>
